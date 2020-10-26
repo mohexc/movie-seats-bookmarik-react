@@ -8,7 +8,7 @@ import Seates from "./components/Seats"
 const App = () => {
   return (
     <Row justify="center" align="middle" className="app">
-      <Col xs={23} lg={16}>
+      <Col xs={23} lg={12}>
         <Movies />
         <ShowCase />
         <Seates />

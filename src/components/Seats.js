@@ -1,15 +1,16 @@
+import { Col, Row } from 'antd'
 import React from 'react'
 
 const Seats = () => {
+
     return (
         <div className="seats-container">
             <div className="screen"></div>
 
-            <div className="row">
-                <div clzassName="seat"></div>
-                <div clzassName="seat selected"></div>
-                <div clzassName="seat occupied"></div>
-            </div>
+            <Row justify="center" align="m" className="row">
+                {Array.from(Array(60).keys()).map(seat => <Col xs={2} key={seat} className="seat">{seat + 1}</Col>)}
+
+            </Row>
 
         </div>
     )
